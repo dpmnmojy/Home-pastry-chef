@@ -1,0 +1,19 @@
+import math
+
+def calculate_surface_area(radius):
+    """
+    Calculate the surface area of a planet given its radius.
+
+    Parameters:
+    radius (float): The radius of the planet.
+
+    Returns:
+    float: The surface area of the planet.
+    """
+    surface_area = 4 * math.pi * radius ** 2
+    return surface_area
+
+# Example usage:
+radius_of_earth = 6371  # Earth's radius in kilometers
+surface_area_of_earth = calculate_surface_area(radius_of_earth)
+print(f"The surface area of Earth is approximately {surface_area_of_earth:.2f} square kilometers.")
